@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Course Registration</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+body{background:#f4f7fc}
+
+/* TOP BAR */
+.top-bar{
+    background:#8ea6c9;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    padding:8px 20px;
+}
+.socials i{
+    background:#5b7db8;
+    padding:6px;
+    border-radius:50%;
+    margin-right:6px;
+}
+
+/* NAV */
+.nav{
+    background:#e8e4dc;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+}
+.logo{color:#2f80ed;font-weight:bold}
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+/* 🔥 ONLY ADDED */
+.nav-links a{
+    text-decoration:none;
+    color:black;
+}
+
+/* HERO */
+.hero{
+    background:linear-gradient(to right,#9dbbe8,#6ea3e3);
+    padding:80px 20px;
+    text-align:center;
+}
+.hero h1{
+    font-size:40px;
+}
+.hero p{
+    margin-top:10px;
+}
+
+/* FORM BOX */
+.container{
+    background:#e6e0d6;
+    margin:30px auto;
+    padding:40px;
+    width:800px;
+    border-radius:15px;
+}
+
+/* TITLE */
+.form-title{
+    text-align:center;
+    color:blue;
+    margin-bottom:30px;
+    text-decoration:underline;
+    font-size:22px;
+}
+
+/* SECTION */
+.section{
+    margin-top:25px;
+    font-weight:bold;
+    color:#2f80ed;
+    border-bottom:2px solid #aaa;
+    padding-bottom:5px;
+}
+
+/* GRID */
+.form{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    margin-top:15px;
+}
+
+/* INPUT */
+.input-group{
+    display:flex;
+    flex-direction:column;
+}
+.input-group label{
+    margin-bottom:5px;
+    font-size:14px;
+}
+.input-group input,
+.input-group select{
+    padding:10px;
+    border-radius:20px;
+    border:1px solid #ccc;
+    outline:none;
+}
+
+/* FULL WIDTH */
+.full{
+    grid-column:1/3;
+}
+
+/* FEE BOX */
+.fee-box{
+    background:#a9c7eb;
+    padding:15px;
+    border-radius:10px;
+    margin-top:20px;
+    font-weight:bold;
+}
+
+/* BUTTON */
+.submit-btn{
+    display:block;
+    margin:25px auto;
+    padding:12px 40px;
+    border:none;
+    border-radius:25px;
+    background:#2f80ed;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* FOOTER */
+.footer{
+    background:#2f80ed;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+
+/* 🔥 ONLY ADDED RESPONSIVE */
+@media (max-width:768px){
+    .nav{flex-direction:column;gap:10px;}
+    .nav-right{flex-direction:column;}
+    .container{width:90%;padding:20px;}
+    .form{grid-template-columns:1fr;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+    <div class="socials">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+    </div>
+    <div>+60 123456789 | enquiry@stucom.com</div>
+</div>
+
+<!-- NAV -->
+<div class="nav">
+    <div class="logo">StuCom</div>
+
+    <div class="nav-right">
+        <ul class="nav-links">
+            <!-- 🔥 ONLY WRAPPED WITH LINKS -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="register_course.html"><b>Register_Course</b></a></li>
+        </ul>
+
+        <!-- 🔥 ONLY ADDED LINK -->
+        <button class="submit-btn" style="padding:6px 15px;" onclick="location.href='login.html'">Login</button>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Our Computer Courses</h1>
+    <p>Complete the form below to enroll in a course</p>
+</div>
+
+<!-- FORM -->
+<div class="container">
+
+    <h2 class="form-title">Enrollment Form</h2>
+
+    <!-- STUDENT -->
+    <div class="section">Student Details</div>
+    <div class="form">
+
+        <div class="input-group">
+            <label>Student Name</label>
+            <input type="text" placeholder="Enter Student Name">
+        </div>
+
+        <div class="input-group">
+            <label>Age</label>
+            <input type="number" placeholder="Enter Age">
+        </div>
+
+        <div class="input-group">
+            <label>Gender</label>
+            <select>
+                <option>Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Education Level</label>
+            <select>
+                <option>Select Education</option>
+                <option>Form 1</option>
+                <option>Form 2</option>
+                <option>Form 3</option>
+                <option>Form 4</option>
+                <option>Form 5</option>
+            </select>
+        </div>
+
+    </div>
+
+    <!-- PARENTS -->
+    <div class="section">Parents / Guardian Details</div>
+    <div class="form">
+
+        <div class="input-group">
+            <label>Parents / Guardian Name</label>
+            <input type="text" placeholder="Enter Name">
+        </div>
+
+        <div class="input-group">
+            <label>Relationship</label>
+            <select>
+                <option>Select Relationship</option>
+                <option>Father</option>
+                <option>Mother</option>
+                <option>Guardian</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter Email">
+        </div>
+
+        <div class="input-group">
+            <label>Phone Number</label>
+            <input type="text" placeholder="Enter Phone Number">
+        </div>
+
+    </div>
+
+    <!-- COURSE -->
+    <div class="section">Course Selection</div>
+    <div class="form">
+        <div class="input-group full">
+            <label>Select Course</label>
+            <select>
+                <option>Web Development - RM350</option>
+                <option>Programming - RM320</option>
+                <option>Database - RM280</option>
+                <option>Networking - RM300</option>
+                <option>Design - RM380</option>
+                <option>Game Development - RM290</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- FEES -->
+    <div class="fee-box">
+        Registration Fee: RM50<br>
+        Monthly / Course Fee: Depends on selected course<br>
+        Total fee details will be confirmed after submission
+    </div>
+
+    <!-- 🔥 ONLY ADDED LINK -->
+    <button class="submit-btn" onclick="location.href='index.html'">Submit Form</button>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+© 2026 StuCom Learning Centre | Terms & Conditions | Privacy Policy
+</div>
+
+</body>
+</html>

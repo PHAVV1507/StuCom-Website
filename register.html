@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Account</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+/* BACKGROUND */
+body{
+    height:100vh;
+    background:linear-gradient(to right,#1e73be,#9fc3e8);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* NAVIGATION (ADDED ONLY) */
+.nav{
+    position:absolute;
+    top:15px;
+    left:20px;
+    font-size:14px;
+}
+.nav a{
+    text-decoration:none;
+    color:black;
+    margin-right:10px;
+}
+
+/* TOP RIGHT TEXT */
+.top-bar{
+    position:absolute;
+    top:15px;
+    right:30px;
+    font-size:13px;
+    color:#000;
+}
+
+/* MAIN BOX */
+.container{
+    background:#eee;
+    width:750px;
+    max-width:90%;
+    padding:40px;
+    border-radius:6px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* TITLE */
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    letter-spacing:1px;
+}
+
+/* FORM GRID */
+.form{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+/* LABEL */
+.input-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.input-group label{
+    font-size:13px;
+    margin-bottom:5px;
+}
+
+.input-group span{
+    color:red;
+}
+
+/* INPUT */
+.input-group input{
+    padding:12px;
+    border:none;
+    border-radius:25px;
+    background:#dcdcdc;
+    outline:none;
+}
+
+/* BUTTON */
+.register-btn{
+    width:250px;
+    margin:30px auto 10px;
+    display:block;
+    padding:12px;
+    border:none;
+    border-radius:25px;
+    background:#3d8edb;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* SIGN IN BUTTON */
+.signin{
+    text-align:center;
+}
+
+.signin-btn{
+    margin-top:10px;
+    padding:10px 25px;
+    border:none;
+    border-radius:25px;
+    background:#a9c7eb;
+    cursor:pointer;
+    font-size:14px;
+}
+
+.signin-btn:hover{
+    background:#8fb4e8;
+}
+
+/* RESPONSIVE (ADDED ONLY) */
+@media (max-width:768px){
+
+    .container{
+        width:90%;
+        padding:20px;
+    }
+
+    .form{
+        grid-template-columns:1fr;
+    }
+
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVIGATION (ADDED ONLY) -->
+<div class="nav">
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="register_course.html">Register Course</a>
+</div>
+
+<!-- TOP RIGHT -->
+<div class="top-bar">Contact Us</div>
+
+<!-- MAIN BOX -->
+<div class="container">
+
+    <h2>CREATE NEW ACCOUNT</h2>
+
+    <div class="form">
+
+        <div class="input-group">
+            <label>Full Name as per NRIC <span>*</span></label>
+            <input type="text">
+        </div>
+
+        <div class="input-group">
+            <label>NRIC <span>*</span></label>
+            <input type="text">
+        </div>
+
+        <div class="input-group">
+            <label>Email <span>*</span></label>
+            <input type="email">
+        </div>
+
+        <div class="input-group">
+            <label>Phone no <span>*</span></label>
+            <input type="text">
+        </div>
+
+        <div class="input-group">
+            <label>Password <span>*</span></label>
+            <input type="password">
+        </div>
+
+        <div class="input-group">
+            <label>Confirm Password <span>*</span></label>
+            <input type="password">
+        </div>
+
+    </div>
+
+    <!-- REGISTER BUTTON (LINK ADDED ONLY) -->
+    <button class="register-btn" onclick="window.location.href='login.html'">
+        REGISTER
+    </button>
+
+    <!-- SIGN IN BUTTON -->
+    <div class="signin">
+        <button class="signin-btn" onclick="window.location.href='login.html'">
+            Have account? Sign in
+        </button>
+    </div>
+
+</div>
+
+</body>
+</html>
